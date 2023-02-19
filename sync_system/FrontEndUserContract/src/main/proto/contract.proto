@@ -1,0 +1,44 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option java_multiple_files = true;
+option java_package = "contract";
+
+package message;
+
+
+service Questions {
+    rpc maxValueVelocity(google.protobuf.Empty) returns (VelocityComplete);
+    rpc meanVelocity(google.protobuf.Empty) returns (Velocity);
+    rpc meanVelocityBetweenDates(Date) returns (Velocity);
+    rpc numConsumers(google.protobuf.Empty) returns (Consumer);
+    rpc executeConsumer(ConsumerName) returns (Confirm);
+}
+
+message VelocityComplete {
+    int32 sid = 1;
+    string local = 2;
+    string data = 3;
+    int32 velocity  = 4;
+}
+
+message Velocity {
+    int32 velocity = 1;
+}
+
+message Date {
+    string startDate = 1;
+    string endDate = 2;
+}
+
+message Consumer {
+    int32 numConsumers = 1;
+}
+
+message ConsumerName {
+    string consumerName = 1;
+}
+
+message Confirm {
+    bool confirm = 1;
+    string text = 2;
+}

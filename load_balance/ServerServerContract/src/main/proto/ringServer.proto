@@ -1,0 +1,18 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option java_multiple_files = true;
+option java_package = "serverServer";
+
+package serverServer;
+
+// The Chat service definition.
+service ServerServer {
+    // send the message of a user to other server to spread the message to all users
+    rpc sendMessageNextHop(stream Message) returns (google.protobuf.Empty);
+}
+
+message Message {
+    string fromUser = 1;
+    string txtMsg = 2;
+    string sourceIP = 3;
+}

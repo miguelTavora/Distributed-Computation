@@ -1,0 +1,25 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option java_multiple_files = true;
+option java_package = "ringServer";
+
+package ringServer;
+
+// The Chat service definition.
+service RingServer {
+    // register the info about the current server, and says the next hop on ring
+    rpc registerServer(ServerInfo) returns (Confirm);
+    // says who he is and returns the next hop on ring
+    rpc nextRingServer(ServerInfo) returns (ServerInfo);
+    // when something went wrong it must delete the instance
+    rpc disconnectServer(ServerInfo) returns (Confirm);
+}
+
+message ServerInfo {
+    string ipAddress = 1;
+    uint32 port = 2;
+}
+
+message Confirm {
+    bool result = 1;
+}

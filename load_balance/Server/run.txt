@@ -1,0 +1,6 @@
+Executar o Servidor:
+
+- comando: sudo java -jar /home/CD2122-G10/Server.jar 34.105.151.199 35.238.32.107
+
+- Primeiro argumento(obrigatório): endereço IP público onde o Ring Manager está a correr, neste exemplo é: 34.105.151.199
+- Segundo argumento(obrigatório): endereço IP público onde está a correr o próprio servidor, neste exemplo é: 35.238.32.107

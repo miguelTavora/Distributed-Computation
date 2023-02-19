@@ -1,0 +1,9 @@
+sudo usermod -aG docker $USER
+sudo newgrp docker
+systemctl start docker
+docker start rabbitmg
+java -jar EdgeFog.jar
+
+
+#### EXECUTAR
+java -jar EdgeFog.jar "endereço IP do docker -> default: localhost"

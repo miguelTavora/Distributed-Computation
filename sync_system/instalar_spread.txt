@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=spread-4.4.0.jar  -DgroupId=org.spread -DartifactId=spread -Dversion=4.4.0 -Dpackaging=jar

@@ -1,0 +1,3 @@
+PARA EXECUTAR:
+
+- java -jar IoTProducer.jar "opcional: endereço IP do docker com RabbitMQ -> default:localhost"

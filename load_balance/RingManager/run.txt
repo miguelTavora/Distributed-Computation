@@ -1,0 +1,8 @@
+Executar o Ring Manager:
+
+- comando: sudo java -jar RingManager.jar 
+
+- Argumento (opcial): número inteiro que representa o número de instâncias do servidor,
+ que o Ring Manager fica à espera, por omissão o seu valor é 3
+ 
+- exemplo comando: sudo java -jar RingManager.jar 2

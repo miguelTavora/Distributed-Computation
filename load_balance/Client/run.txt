@@ -1,0 +1,6 @@
+Executar o Cliente:
+
+- comando: sudo java -jar /home/CD2122-G10/Client.jar 34.105.151.199
+
+- Primeiro argumento(obrigatório): endereço IP público do Ring Manager, neste exemplo é: 34.105.151.199
+Por omissão este argumento é: localhost

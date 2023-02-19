@@ -1,0 +1,8 @@
+nohup spread -c /usr/local/etc/newspread.conf &
+
+java -jar EventProcessing.jar 35.189.95.174 localhost
+
+
+
+########### EXECUTAR
+- java -jar EventProcessing.jar "endereço IP do rabbitMQ -> default: localhost" "endereço IP do deamon do spread -> default: localhost"

@@ -1,0 +1,5 @@
+java -jar User.jar 104.155.163.38
+
+
+###### Executar
+- java -jar User.jar "endereço IP do servidor gRPC do FrontEnd -> default:localhost"

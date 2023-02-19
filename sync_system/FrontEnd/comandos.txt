@@ -1,0 +1,7 @@
+nohup spread -c /usr/local/etc/newspread.conf &
+java -jar FrontEnd.jar localhost
+
+
+###### EXECUTAR
+
+- java -jar FrontEnd.jar "Endereço IP do deamon spread -> default é localhost" "(opcional) porto do servidor -> default é 8000"
